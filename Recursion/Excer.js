@@ -35,14 +35,18 @@ function findFactorialRecursive(number) {
 //For example: fibonacciRecursive(6) should return 8
 
 function fibonacciIterative(n){
-    //code here;
+  const fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
+  for(let i = 0; i < fibonacci.length; i++){
+
+    return fibonacci[i];
+  }
   }
   fibonacciIterative(3);
   
   function fibonacciRecursive(n) {
     const fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
-
-    if(n === fibonacci[n]) {
+    
+    if(n) {
         return fibonacci[n];
     }
   }
