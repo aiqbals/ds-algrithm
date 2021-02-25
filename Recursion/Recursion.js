@@ -1,3 +1,5 @@
+// Recursion - a function that call itself recursively - good for sorting or tree traversal
+
 let counter = 0;
 function recur() {
     //recur(); //stack overflow occurs. Need to set base case or when to stop 
