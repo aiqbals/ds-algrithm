@@ -7,7 +7,7 @@ const basket = [2, 65, 34, 2, 1, 7, 8];
 basket.sort(function (a, b) {
     return a - b;
 }) // to solve this
-//array elm are converted to strings, then sorted according to each character's Unicode code point value e.g., 7 = 55
+//array elm r converted to strings,thn sorted according to each character's Unicode code point value e.g., 7 = 55
 // it is implementation dependent e.g., for chrome v8 is diff from firefox sorting implementation
 // all this rules are defined by the js governing board ES / EcmaScript
 
