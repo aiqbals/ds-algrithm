@@ -1,5 +1,4 @@
 // devide & conquer techniqe / O(n log n) both time, O(n) space complexity/ no nested loop here
-  
 const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 
 function mergeSort (array) {
@@ -14,7 +13,6 @@ function mergeSort (array) {
   // console.log('left:', left);
   // console.log('right:', right);
 
-  
   return merge(
     mergeSort(left),
     mergeSort(right)
