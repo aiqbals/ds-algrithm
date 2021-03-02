@@ -1,5 +1,4 @@
 const basket = ['apples', 'grapse', 'pears'];
-
 //linked list: apples --> graps --> pears
 // JS doesnt come with builtin linked list but we can build it
 const obj1 = {a: true};

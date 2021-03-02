@@ -1,5 +1,4 @@
 //Reversing linked list
-
 class LinkedList {
     constructor(value) {
         this.head = {
