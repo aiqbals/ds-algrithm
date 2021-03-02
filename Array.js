@@ -76,6 +76,7 @@ function reverse(str) {
     console.log(backwords);
     return backwords.join('');
 }
+
 reverse('My name is Asif')
 
 //we can simply use reverse method
@@ -87,6 +88,7 @@ function reverse2(str) {
     return str.split('').reverse().join('')
     //converting to array and thn revers and the join(to make string). 
 }
+
 reverse2('My name is Asif');
 //Or
 const reverse3 = str =>  str.split('').reverse().join('');
@@ -94,6 +96,7 @@ reverse3('My name is Asif');
 //Or
 const reverse4 = str =>  [...str].reverse().join('');
 reverse4('My name is Asif');
+
 
 // MergeSortedArrays two sorted array [0,3,4,31][4,6,30] to one sorted array[]
 const merge = (array, array2) => {
@@ -126,4 +129,5 @@ const merge = (array, array2) => {
     }
     return mergetwo;
 }
+
 merge([0,3,4,31],[4,6,30])
