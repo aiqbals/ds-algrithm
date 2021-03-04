@@ -5,24 +5,15 @@
 // Build with Array(faster access in memory cuz they are next to each oter) / static and dynamic
 // or LinkedList (scattered all over memroy, use extram memory But more dynamic)
 
-class Node {
-    constructor(value){
-      this.value = value;
-    }
-  }
-  
   class Stack {
     constructor(){
       this.top = [];
-      this.length = 0;
     }
     peek() {
-        return this.top;
+        return this.top[this.top.length-1];
     }
     push(value){
-        //const value = new Node(value)
         this.top.push(value);
-        this.length++;
         return this;
     }
     pop(){
@@ -30,12 +21,11 @@ class Node {
             return null
         }
         this.top.pop();
-        this.length--;
         return this;
     }
   }
   
-  const myStack = new Stack();
+const myStack = new Stack();
   myStack.push('google')
   myStack.push('udemy')
   myStack.push('Discord')
