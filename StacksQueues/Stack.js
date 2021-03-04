@@ -38,6 +38,9 @@ class Node {
         if(!this.top) {
             return null
         }
+        if(this.top===this.bottom) {
+            this.bottom=null
+        }
         const holdingPointer = this.top; 
         // this is no longer referenced and used, will be removed from memory by JS garbage collector
         this.top = this.top.next;
