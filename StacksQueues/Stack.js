@@ -19,12 +19,38 @@ class Node {
       this.length = 0;
     }
     peek() {
+        return this.top;
     }
     push(value){
+        const newNode = new Node(value);
+        if(this.length === 0) {
+            this.top = newNode;
+            this.bottom = newNode;
+        } else {
+            const holdingPointer = this.top;
+            this.top = newNode;
+            this.top.next = holdingPointer;
+        }
+        this.length++;
+        return this;
     }
     pop(){
+        if(!this.top) {
+            return null
+        }
+        const holdingPointer = this.top; 
+        // this is no longer referenced and used, will be removed from memory by JS garbage collector
+        this.top = this.top.next;
+        this.length--;
+        //return holdingPointer;
+        return this;
     }
     //isEmpty
   }
   
   const myStack = new Stack();
+  myStack.push('google')
+  myStack.push('udemy')
+  myStack.push('Discord')
+  myStack.peek()
+  myStack.pop()
