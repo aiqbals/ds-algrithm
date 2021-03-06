@@ -1,4 +1,4 @@
-// O(n log n) - both time and space complexity - picking good pivot is crucial
+// O(n log n) - both time. And space complexity - O(log n) which is better thn mergesort - picking good pivot is crucial here. 
 // Worst case, Time complexity can be O(n squire) when pivot is smallest or largest in the item
 const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
 
